@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="525667c4-aa51-4d15-bc94-ddfda0bc56c9" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtilsTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/android-testing.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/android-testing.app.iml" afterDir="false" />
+    <list default="true" id="525667c4-aa51-4d15-bc94-ddfda0bc56c9" name="Default Changelist" comment="Add in some simple tests.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtilsTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtilsTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <recent name="com.example.android.architecture.blueprints.todoapp.statistics" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.StatisticsUtilsTest.getActiveAndCompletedStats_both_returnsHundredZero">
+  <component name="RunManager" selected="Gradle.StatisticsUtilsTest">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="android-testing.app" />
       <option name="DEPLOY" value="true" />
@@ -265,9 +262,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.StatisticsUtilsTest.getActiveAndCompletedStats_both_returnsHundredZero" />
-        <item itemvalue="Gradle.StatisticsUtilsTest.getActiveAndCompletedStats_noCompleted_returnsHundredZero" />
         <item itemvalue="Gradle.StatisticsUtilsTest" />
+        <item itemvalue="Gradle.StatisticsUtilsTest.getActiveAndCompletedStats_noCompleted_returnsHundredZero" />
+        <item itemvalue="Gradle.StatisticsUtilsTest.getActiveAndCompletedStats_both_returnsHundredZero" />
         <item itemvalue="Android Instrumented Tests.ExampleInstrumentedT..." />
         <item itemvalue="Gradle.ExampleUnitTest.addition_isCorrect" />
       </list>
@@ -289,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638331121070</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add in some simple tests.">
+      <created>1638351244671</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638351244671</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +313,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="Add in some simple tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add in some simple tests." />
   </component>
 </project>
