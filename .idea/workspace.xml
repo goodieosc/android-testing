@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="525667c4-aa51-4d15-bc94-ddfda0bc56c9" name="Default Changelist" comment="Fix the code so that the tests are fixed">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModelTest.kt" afterDir="false" />
+    <list default="true" id="525667c4-aa51-4d15-bc94-ddfda0bc56c9" name="Default Changelist" comment="Setup ViewModel Test">
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/LiveDataTestUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModelTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -313,7 +316,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638353609052</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Setup ViewModel Test">
+      <created>1638503469558</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638503469558</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Setup ViewModel Test">
+      <created>1638503533894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638503533894</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,6 +353,7 @@
     <MESSAGE value="Add in some simple tests." />
     <MESSAGE value="Add in some tests that fail" />
     <MESSAGE value="Fix the code so that the tests are fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix the code so that the tests are fixed" />
+    <MESSAGE value="Setup ViewModel Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup ViewModel Test" />
   </component>
 </project>
