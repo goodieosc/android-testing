@@ -35,4 +35,16 @@ class TasksViewModelTest {
         )
     }
 
+
+    @Test
+    fun setFilterAllTasks_tasksAddViewVisible() {
+
+        // Given a fresh ViewModel
+
+        // When the filter type is ALL_TASKS
+
+        // Then the "Add task" action is visible
+
+    }
+
 }
