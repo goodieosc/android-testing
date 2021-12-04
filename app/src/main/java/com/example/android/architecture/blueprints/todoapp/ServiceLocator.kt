@@ -1,6 +1,7 @@
 package com.example.android.architecture.blueprints.todoapp
 
 import android.content.Context
+import androidx.annotation.VisibleForTesting
 import androidx.room.Room
 import com.example.android.architecture.blueprints.todoapp.data.source.DefaultTasksRepository
 import com.example.android.architecture.blueprints.todoapp.data.source.TasksDataSource
@@ -8,14 +9,19 @@ import com.example.android.architecture.blueprints.todoapp.data.source.TasksRepo
 import com.example.android.architecture.blueprints.todoapp.data.source.local.TasksLocalDataSource
 import com.example.android.architecture.blueprints.todoapp.data.source.local.ToDoDatabase
 import com.example.android.architecture.blueprints.todoapp.data.source.remote.TasksRemoteDataSource
+import kotlinx.coroutines.runBlocking
 
 
 //Object instead of class so that there ins only ever one
 object ServiceLocator {
 
+    private val lock = Any()
+
     private var database: ToDoDatabase? = null
     @Volatile //In case accessed at the same time be multiple threads.
     var tasksRepository: TasksRepository? = null
+        @VisibleForTesting set  //Mark as only to be used in testing
+
 
     fun provideTasksRepository(context: Context): TasksRepository {
         synchronized(this) { //synchronized on this to avoid, in situations with multiple threads running, ever accidentally creating two repository instances.
@@ -42,4 +48,21 @@ object ServiceLocator {
         database = result
         return result
     }
+
+    @VisibleForTesting
+    fun resetRepository() {
+        synchronized(lock) {
+            runBlocking {
+                TasksRemoteDataSource.deleteAllTasks()
+            }
+            // Clear all data to avoid test pollution.
+            database?.apply {
+                clearAllTables()
+                close()
+            }
+            database = null
+            tasksRepository = null
+        }
+    }
+
 }
