@@ -9,14 +9,16 @@ import com.example.android.architecture.blueprints.todoapp.data.source.local.Tas
 import com.example.android.architecture.blueprints.todoapp.data.source.local.ToDoDatabase
 import com.example.android.architecture.blueprints.todoapp.data.source.remote.TasksRemoteDataSource
 
+
+//Object instead of class so that there ins only ever one
 object ServiceLocator {
 
     private var database: ToDoDatabase? = null
-    @Volatile
+    @Volatile //In case accessed at the same time be multiple threads.
     var tasksRepository: TasksRepository? = null
 
     fun provideTasksRepository(context: Context): TasksRepository {
-        synchronized(this) {
+        synchronized(this) { //synchronized on this to avoid, in situations with multiple threads running, ever accidentally creating two repository instances.
             return tasksRepository ?: createTasksRepository(context)
         }
     }
