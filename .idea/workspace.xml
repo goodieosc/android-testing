@@ -9,17 +9,35 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="525667c4-aa51-4d15-bc94-ddfda0bc56c9" name="Default Changelist" comment="Refactor code to use the service locator">
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/android/architecture/blueprints/todoapp/data/source/FakeAndroidTestRepository.kt" afterDir="false" />
+    <list default="true" id="525667c4-aa51-4d15-bc94-ddfda0bc56c9" name="Default Changelist" comment="Use Service Locator in your Tests">
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_instrumentation_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_contrib_3_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_services_storage_1_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_apps_common_testing_accessibility_framework_accessibility_test_framework_3_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_beta01_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_beta01_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_beta01_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/android-testing.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/android-testing.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragmentTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/android/architecture/blueprints/todoapp/taskdetail/TaskDetailFragmentTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/architecture/blueprints/todoapp/ServiceLocator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\oscar\.android\avd\Pixel_4_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.50.158:41525]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -84,7 +102,7 @@
       <recent name="com.example.android.architecture.blueprints.todoapp.data.source" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests.activeTaskDetails_...()">
+  <component name="RunManager" selected="Android Instrumented Tests.TaskDetailFragmentTest">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="android-testing.app" />
       <option name="DEPLOY" value="true" />
@@ -313,8 +331,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android Instrumented Tests.activeTaskDetails_...()" />
         <item itemvalue="Android Instrumented Tests.TaskDetailFragmentTest" />
+        <item itemvalue="Android Instrumented Tests.activeTaskDetails_...()" />
         <item itemvalue="Gradle.TasksViewModelTest" />
         <item itemvalue="Gradle.TasksViewModelTest.addNewTask_setsNewTaskEvent" />
         <item itemvalue="Gradle.StatisticsUtilsTest" />
@@ -421,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638578171328</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Use Service Locator in your Tests">
+      <created>1638579432656</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638579432656</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,6 +476,7 @@
     <MESSAGE value="Launch a Fragment from a Test" />
     <MESSAGE value="Create a service locator" />
     <MESSAGE value="Refactor code to use the service locator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor code to use the service locator" />
+    <MESSAGE value="Use Service Locator in your Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use Service Locator in your Tests" />
   </component>
 </project>
